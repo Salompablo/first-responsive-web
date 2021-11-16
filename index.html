@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo mando PS5</title>
+    <link rel="stylesheet" href="Sass/Style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="./Sass/Playstation_Img/logo.png" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="">Game Controllers</a></li>
+                    <li><a href="">VR Accessories</a></li>
+                    <li><a href="">Media Remotes</a></li>
+                    <li><a href="">Others</a></li>
+                </ul>
+            </nav>
+            <img src="./Sass/Playstation_Img/menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+        
+        <div class="row">
+            <div class="col-1">
+                <h2>PS5<br> Dualsense</h2>
+                <h3>Wireless Controller for Playstation 5</h3>
+                <p>(Compatible/Generic)</p>
+                <h4>$67.99</h4>
+                <button type="button">Buy Now<img src=".Sass/Playstation_Img/arrow.png"> 
+                </button>
+            </div>
+            <div class="col-2">
+                <img src="./Sass/Playstation_Img/PS5-Controller-PNG-Image.png" class="controller">
+            <div class="color-box"></div>
+            </div>
+            <div class="add-btn">
+                <img src="./Sass/Playstation_Img/add.png">
+                <p><small>Add to cart</small></p>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <img src="./Sass/Playstation_Img/fb.png">
+            <img src="./Sass/Playstation_Img/tw.png">
+            <img src="./Sass/Playstation_Img/ig.png">
+        </div>
+    </div>
+
+    <script>
+
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+
+            if(menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight = "130px"
+                }
+            else
+                {
+                    menuList.style.maxHeight = "0px"
+
+            }
+
+        }
+
+    </script>
+    
+</body>
+</html>
